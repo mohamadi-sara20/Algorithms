@@ -20,16 +20,12 @@ public class UF {
     }
 
     public boolean connected(int p, int q){
-        return id[p] == id[q];
+        return root(p) == root(q);
     }
 
     public void union(int p, int q){
-        int pid = id[p];
-        int qid = id[q];
-        for(int i = 0; i < this.id.length; i++){
-            if (id[i] == pid)
-                id[i] = qid;
-        }
+        id[root(p)] = id[root(q)];
+
     }
 
     private int root(int p){
