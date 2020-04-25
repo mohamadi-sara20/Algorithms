@@ -25,7 +25,20 @@
       <version>4.11</version>
       <scope>test</scope>
     </dependency>
+    <dependency>
+      <groupId>LibSVM</groupId>
+      <artifactId>LibSVM</artifactId>
+      <scope>src</scope>
+    </dependency>
+
+
+    <dependency>
+      <groupId>Std*</groupId>
+      <artifactId>Std*</artifactId>
+      <scope>src</scope>
+    </dependency>
   </dependencies>
+
 
   <build>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
