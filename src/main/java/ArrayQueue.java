@@ -16,8 +16,9 @@ public class ArrayQueue{
 		String i = s[B];
 		s[B] = null;
 		B++;
-		//when queue is emptied but indices are reset. 
+		//when queue is emptied but indices are not reset. 
 		//when N is 1; e.g., and B is 0; and you perform dequeue, B becomes 1 like N. But they should both be reset. 
+		//Case: You empty the queue but no resizes happen. So N and B are not synched. 
 		if(B == N) {B = 0; N = 0;}
 
 		if(N - B == (s.length / 4) && N - B > 0){
