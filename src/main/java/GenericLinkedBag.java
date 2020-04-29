@@ -1,5 +1,5 @@
 import java.util.Iterator;
-public class LinkedBag<Item> implements Iterable<Item> {
+public class GenericLinkedBag<Item> implements Iterable<Item> {
     private Node first = null;
     private int n;
 
@@ -31,7 +31,7 @@ public class LinkedBag<Item> implements Iterable<Item> {
 
 
     public static void main(String[] args){
-        LinkedBag<Integer> s = new LinkedBag<Integer>();
+        GenericLinkedBag<Integer> s = new GenericLinkedBag<Integer>();
         s.add(1);
         System.out.println(s.size());
         s.add(2);
