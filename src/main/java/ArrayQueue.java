@@ -47,7 +47,9 @@ public class ArrayQueue{
 		a.enqueue("1");
 		a.enqueue("2");
 		a.enqueue("3");
+		a.display_queue();
 		a.dequeue();
+		a.display_queue();
 		a.dequeue();
 		a.dequeue();
 		a.enqueue("4");
