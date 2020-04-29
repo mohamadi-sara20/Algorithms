@@ -1,9 +1,21 @@
-public class GenericLinkedListStack<Item> {
+import java.util.Iterator;
+public class GenericLinkedListStack<Item> implements Iterable<Item> {
     private Node first = null;
 
     private class Node{
         Item item;
         Node next;
+    }
+    private class ListIterator implements Iterator<Item>{
+        private Node current = first;
+        public bolean hasNext(){return current.next != null;}
+        public void remove(){ /*not supported here */ }
+        public Item next(){
+            Item item = current.item;
+            current = current.next;
+            return item;
+            }
+
     }
 
     public void push(Item i){
@@ -31,6 +43,8 @@ public class GenericLinkedListStack<Item> {
             System.out.println("Next: " + this.first.next.item);
         }
     }
+
+    public Iterator<Item> iterator(){return new ListIterator();}
 
 
 
