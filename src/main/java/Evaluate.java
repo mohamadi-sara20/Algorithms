@@ -44,7 +44,7 @@ public class Evaluate{
 
 	public static void main(String[] args){
 			Evaluate e = new Evaluate();
-			String expression = "((2+5)*(1+3))";
+			String expression = "(1+((2+3)*(4*5)))";
 			System.out.print(e.evaluate(expression));
 	}
 }
