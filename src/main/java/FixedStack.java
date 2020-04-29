@@ -1,19 +1,19 @@
-public class FixedStack {
-	private String[] s;
+public class FixedStack <Item> {
+	private Item[] s;
 	private int N = 0;
 
 	public FixedStack(int capacity){
-		s = new String[capacity];
+		s = new Item[capacity];
 	}
 
-	public void push(String i){
+	public void push(Item i){
 		s[N++] = i;
 	}
 
 
 	//loitering problem -__- hence the second line
-	public String pop(){
-		String i = s[--N];
+	public Item pop(){
+		Item i = s[--N];
 		s[N] = null;
 		return i;
 
