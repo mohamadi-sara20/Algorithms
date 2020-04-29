@@ -1,6 +1,8 @@
 // This is a very very simple form of Dijkstra's algorithm assuming a very simple input: 
-// containing only two operators and with the priorities are marked in the input through
-// parantheses.   
+// a. only input of this form is accepted: (operand operator operand);
+// b. input should contain only two operators + and *
+// c. priorities should be marked in the input through parantheses
+// So we do not support (1+1+1) which violates rule a, (1 - 2) which violates rule b, or 1*2-3 which violates rule c.
   
 public class Evaluate{
 	private GenericResizingStack<Integer> val_stack;
@@ -22,7 +24,6 @@ public class Evaluate{
 				Character operator = op_stack.pop();
 
 				if (operator == '+') {
-					System.out.println("Addition");
 					int res = val_stack.pop() + val_stack.pop();
 					val_stack.push(res);
 				}
@@ -43,7 +44,7 @@ public class Evaluate{
 
 	public static void main(String[] args){
 			Evaluate e = new Evaluate();
-			String expression = "((2+5)*(1+2))";
+			String expression = "((2+5)*(1+3))";
 			System.out.print(e.evaluate(expression));
 	}
 }
