@@ -28,6 +28,8 @@ public class ArrayQueue{
 
 	public boolean is_empty(){return s.length == 0;}
 	private void resize(int capacity){
+		System.out.print("Resizing to: " );
+		System.out.println(capacity);
 		String[] new_s = new String[capacity];
 		int j = 0;
 		for(int i = B; i < N; i++){
@@ -42,14 +44,21 @@ public class ArrayQueue{
 		System.out.println();
 	}
 
+	private int size(){return s.length;}
+
 	public static void main(String[] args){
 		ArrayQueue a = new ArrayQueue();
 		a.enqueue("1");
 		a.enqueue("2");
 		a.enqueue("3");
+		a.enqueue("4");
+		a.enqueue("8");
+		a.enqueue("8");
+		a.enqueue("8");
+		a.enqueue("8");
 		a.display_queue();
 		a.dequeue();
-		a.display_queue();
+		a.dequeue();
 		a.dequeue();
 		a.dequeue();
 		a.enqueue("4");
