@@ -12,25 +12,17 @@ public class Shell{
 			}
 		}
 		return a;
-
 	}
-
-
 
 	public void display(int[]a){
 	        for(int i=0;i<a.length;i++)System.out.println(a[i]);
 	    }
 
-
-
     public static void main(String[] args) {
         int[] a = {10,9,8,7,6,5,4,3,2,1};
         Shell shell = new Shell();
         shell.display(shell.sort(a));
-
-        
+   
     }
-
-
 
 }
