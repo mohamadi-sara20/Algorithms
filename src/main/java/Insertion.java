@@ -5,6 +5,7 @@ public class Insertion{
 			int j = i;
 			//compare part
 			while(j >= 1 && a[j-1] > a[j]){
+				//exchange part
 				int temp = a[j-1];
 				a[j-1] = a[j];
 				a[j] = temp;
