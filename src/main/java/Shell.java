@@ -4,10 +4,16 @@ public class Shell{
 	public int[] sort(int[] a){
 		for(int gap: gap_arr){
 			for(int i = gap; i < a.length; i++){
-				for(int j= i; j >= gap && a[j - gap] > a[j]; j=j-gap){
-					int temp = a[j];
-					a[j] = a[j-gap];
-					a[j-gap] = temp;
+				for(int j= i; j >= gap; j=j-gap){
+				
+					if(a[j - gap] > a[j])
+						{
+							int temp = a[j];
+							a[j] = a[j-gap];
+							a[j-gap] = temp;
+						}
+
+					else continue;
 				}
 			}
 		}
