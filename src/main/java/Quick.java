@@ -8,12 +8,9 @@ public class Quick {
 
 
 		while (true){
-			while (a[i].compareTo(a[lo]) < 0){i++; if (i >= high) {break;}}
-			while (a[j].compareTo(a[lo]) > 0){j--; if (j <= lo) { break;}}
+			while (a[i].compareTo(a[lo]) < 0){i++; if (i >= high) break;}
+			while (a[j].compareTo(a[lo]) > 0){j--; if (j <= lo) break;}
 		
-			
-			if(j <= lo){break;}
-			if(i >= high){break;} 
 			if (j <= i) break;
 
 			Character temp = a[i];
