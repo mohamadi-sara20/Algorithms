@@ -1,21 +1,16 @@
+import edu.princeton.cs.algs4.StdRandom;
 import java.util.Iterator;
 import java.util.NoSuchElementException;
-import java.util.Random;
 
 public class RandomizedQueue<Item> implements Iterable<Item> {
     private Item[] s;
-    private Random r;
     private int n;
     private int c;
     private int[] taken = new int[1];
 
     // construct an empty randomized queue
     public RandomizedQueue() {
-        long seed = System.currentTimeMillis();
         s = ((Item[]) new Object[1]);
-        r = new Random();
-        r.setSeed(seed);
-
     }
 
     // is the randomized queue empty?
@@ -76,7 +71,7 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
     private Item fetch(boolean markOut) {
         if (isEmpty()) throw new java.util.NoSuchElementException();
         int p = n - c;
-        int chosen = r.nextInt(p);
+        int chosen = StdRandom.uniform(p);
         int i = 0;
         int j = 0;
         boolean found = false;
@@ -143,65 +138,6 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
         rq.dequeue();
         rq.enqueue(9);
         System.out.println(rq.size());
-//        rq.enqueue("4");
-//        rq.enqueue("5");
-//        rq.enqueue("6");
-//        rq.enqueue("7");
-//        rq.dequeue();
-//        rq.dequeue();
-//        System.out.println(rq.isEmpty());
-//        System.out.println(rq.dequeue());
-//        System.out.println(rq.dequeue());
-//        System.out.println(rq.dequeue());
-//        System.out.println(rq.dequeue());
-//        System.out.println(rq.dequeue());
-//        System.out.println(rq.isEmpty());
-//        System.out.println(rq.size());
-
-
-//        int p = 0;
-//        for (int i = 0; i < 4000; i++) {
-//            System.out.println("Size: " + rq.size());
-//            int si = rq.size();
-//            Random r = new Random();
-//            p = r.nextInt(4);
-//            switch (p) {
-//                case 0 | 3:
-//                    rq.enqueue("1");
-//                    si++;
-//                    if (!(si == rq.size())) {
-//                        System.out.println("SSSSSS");
-//                        break;
-//                    }
-//                    break;
-//
-//                case 1:
-//                    if (rq.isEmpty()) {
-//                        System.out.println("Queue is empty. passing!");
-//                    } else {
-//                        rq.sample();
-//                        si--;
-//                        if (!(si == rq.size())) {
-//                            System.out.println("SSSSSS");
-//                            break;
-//                        }
-//                    }
-//                    break;
-//                case 2:
-//                    if (rq.isEmpty()) {
-//                        System.out.println("Queue is empty. passing!");
-//                    } else {
-//                        rq.dequeue();
-//                        si--;
-//                        if (!(si == rq.size())) {
-//                            System.out.println("SSSSSS");
-//                            break;
-//                        }
-//                    }
-
-//            }
-
-//        }
 
     }
 }
