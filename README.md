@@ -7,6 +7,6 @@ Sedgewick and Wayne's Princeton OOC
 
 [Assignment 3 Specification](https://coursera.cs.princeton.edu/algs4/assignments/collinear/specification.php)
 
-[Assignment 3 Specification](https://coursera.cs.princeton.edu/algs4/assignments/8puzzle/specification.php)
+[Assignment 4 Specification](https://coursera.cs.princeton.edu/algs4/assignments/8puzzle/specification.php)
 
 
