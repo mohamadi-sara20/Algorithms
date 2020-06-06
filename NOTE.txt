@@ -1,3 +1,3 @@
-Assignment 1 & Assignment 2: Code is not updated yet. The current code is old and does not match the report. I need to find their last version and push again. 
+Assignment 1: Code is not updated yet. The current code is old and does not match the report. I need to find their last version and push again. 
 
 Assignment 2: Iterable problem persists and is not implemented yet. 
