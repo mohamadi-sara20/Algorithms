@@ -1,3 +1,16 @@
+
+ ---------------------------
+| Assignment 1 score: 86    |
+| Assignment 2 score: 88    |
+| Assignment 3 score: 94    |
+| Assignment 4 score: 92    |
+ ---------------------------
+
+
+
+
+
+
 Assignment 1: Code is not updated yet. The current code is old and does not match the report. I need to find the last version and push again. 
 
 Assignment 2: Iterable problem persists and is not implemented yet. 
