@@ -9,4 +9,4 @@ Sedgewick and Wayne's Princeton OOC
 
 [Assignment 4 Specification](https://coursera.cs.princeton.edu/algs4/assignments/8puzzle/specification.php)
 
-
+[Assignment 5 Specification](https://coursera.cs.princeton.edu/algs4/assignments/kdtree/specification.php)
