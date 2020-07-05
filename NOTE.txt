@@ -4,6 +4,7 @@
 | Assignment 2 score: 88    |
 | Assignment 3 score: 94    |
 | Assignment 4 score: 92    |
+| Assignment 5 score: 100   |
  ---------------------------
 
 
